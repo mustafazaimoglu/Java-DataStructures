@@ -74,5 +74,5 @@ public class Sorting
             }
             System.out.println(i + " = " + Arrays.toString(this.arr));
         }
-    }
+    } 
 }
