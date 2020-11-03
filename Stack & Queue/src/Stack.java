@@ -1,7 +1,6 @@
 
 import java.util.Arrays;
 
-
 public class Stack
 {
     private int es;
