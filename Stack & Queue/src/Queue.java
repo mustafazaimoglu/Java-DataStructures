@@ -16,7 +16,7 @@ public class Queue
         this.es = 0;
     }
 
-    public void push(int x)
+    public void insert(int x)
     {
         // insert - enqueue
         if (!isFull())
@@ -36,7 +36,7 @@ public class Queue
 
     }
 
-    public int pop()
+    public int remove()
     {
         // remove - dequeue
         if (!isEmpty())

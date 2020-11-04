@@ -5,28 +5,28 @@ public class Main
     {
          Queue q = new Queue(5);
          
-         q.pop();
+         q.remove();
          q.print();
-         q.push(2);
+         q.insert(2);
          q.print();
-         q.push(8);
+         q.insert(8);
          q.print();
-         System.out.println(q.pop()  +  " pop");
-         q.push(5);
+         System.out.println(q.remove()  +  " pop");
+         q.insert(5);
          q.print();
-         System.out.println(q.pop() +  " pop");  
-         q.push(7);
+         System.out.println(q.remove() +  " pop");  
+         q.insert(7);
          q.print();
-         q.push(6);
+         q.insert(6);
          q.print();
-         q.push(9);
+         q.insert(9);
          q.print();
          System.out.println(q.peek() + " peek");
-         q.push(4);
+         q.insert(4);
          q.print();
-         System.out.println(q.pop() + " pop");
+         System.out.println(q.remove() + " pop");
          q.print();
-         q.push(10);
+         q.insert(10);
          q.print();
         
         
