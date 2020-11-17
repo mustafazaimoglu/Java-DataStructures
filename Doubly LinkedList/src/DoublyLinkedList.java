@@ -34,7 +34,6 @@ public class DoublyLinkedList
         if(first == null)
         {
             first = newNode;
-            last = newNode;
         } 
         else
         {
