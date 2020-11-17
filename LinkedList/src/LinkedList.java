@@ -2,11 +2,15 @@
 public class LinkedList
 {
     Node first;
+    Node last;
 
     public LinkedList()
     {
         this.first = null;
+        this.last = null;
     }
+    
+    
 
     public void add(Car c)
     {
