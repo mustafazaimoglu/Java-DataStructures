@@ -9,9 +9,88 @@ public class LinkedList
         this.first = null;
         this.last = null;
     }
-    
-    
 
+    public void addToHead(Car c)
+    {
+        Node n = new Node(c);
+        if (this.first == null)
+        {
+            last = n;
+        }
+        else
+        {
+            n.next = first;
+        }
+
+        first = n;
+    }
+
+    public void addToEnd(Car c)
+    {
+        Node n = new Node(c);
+        if (this.first == null)
+        {
+            first = n;
+        }
+        else
+        {
+            last.next = n;
+        }
+
+        last = n;
+    }
+    
+    public void addToSpesificPoint(Node p,Car c)
+    {
+        Node n = new Node(c);
+        
+        if(p == null)
+        {
+            addToHead(c);
+        }
+        else if (p == last)
+        {
+            addToEnd(c);
+        }
+        else
+        {
+            n.next = p.next;
+            p.next = n;
+        }
+    }
+
+    public void addWithSort(Car c)
+    {
+        Node n = new Node(c);
+
+        if (this.first == null)
+        {
+            addToHead(c);
+        }
+        else if (this.first.car.getYear() > n.car.getYear())
+        {
+            addToHead(c);
+        }
+        else
+        {
+            Node current = first;
+            while(current.next != null && current.next.car.getYear() < n.car.getYear())
+            {
+                current = current.next;
+            }
+                        
+            n.next = current.next;
+            current.next = n;
+            
+            if(current == this.last)
+            {
+                this.last = n;
+            }
+        }
+
+    }
+
+/* OLD VERSION
     public void add(Car c)
     {
         Node n = new Node(c);
@@ -41,6 +120,7 @@ public class LinkedList
 
         }
     }
+*/
 
     public void print()
     {
