@@ -84,7 +84,13 @@ public class DoublyLinkedList
             {
                 current = current.next;
             }
+            
             addToSpesificPoint(current, c);
+            
+            if(current == this.last)
+            {
+                this.last = newNode;
+            }
         }
              
     }
