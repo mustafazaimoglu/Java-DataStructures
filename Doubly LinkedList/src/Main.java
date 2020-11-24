@@ -23,11 +23,11 @@ public class Main
         ll.printForward();
         ll.addWithSort(new Car("Mazda", 1998));
         ll.printForward();
-        ll.addWithSort(new Car("Subaru", 2021));
-        ll.printForward();
         ll.addWithSort(new Car("Mitsubishi", 2007));
         ll.printForward();
         ll.addWithSort(new Car("Kawasaki", 2013));
+        ll.printForward();
+        ll.addWithSort(new Car("Subaru", 2021));
         ll.printForward();
         
         ll.printReverse();
