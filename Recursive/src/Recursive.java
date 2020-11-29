@@ -69,22 +69,22 @@ public class Recursive
         int i, j, k;
         int arrLength1 = intermediate - left + 1;
         int arrLength2 = right - intermediate;
-        
+
         int L[] = new int[arrLength1];
         int R[] = new int[arrLength2];
-        
-        for(i = 0; i < arrLength1; i++)
+
+        for (i = 0; i < arrLength1; i++)
         {
             L[i] = arr[left + i];
         }
-        for(j = 0; j < arrLength2; j++)
+        for (j = 0; j < arrLength2; j++)
         {
             R[j] = arr[intermediate + j + 1];
         }
 
         i = j = 0;
         k = left;
-        
+
         while (i < arrLength1 && j < arrLength2)
         {
             if (L[i] < R[j])
@@ -99,7 +99,7 @@ public class Recursive
             }
             k++;
         }
-        
+
         while (i < arrLength1)
         {
             arr[k] = L[i];
@@ -113,7 +113,6 @@ public class Recursive
             k++;
         }
 
-        
     }
 
 }
