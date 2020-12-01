@@ -10,7 +10,7 @@ public class Main
         
         int arr[] =
         {
-            2, 88, 13, 18, 61, 44, 33, 78
+            2, 14, 13, 18, 61, 44, 88, 78
         };
         
         System.out.print("Unsorted Form : ");
