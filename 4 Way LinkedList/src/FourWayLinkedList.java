@@ -14,7 +14,7 @@ public class FourWayLinkedList
         this.last = null;
     }
 
-    public void twoDToOneD()
+    public void twoToOne()
     {
         int counter = 0;
         Node rowHead = first;
@@ -43,7 +43,7 @@ public class FourWayLinkedList
 
     }
 
-    public void oneDtoTwoD()
+    public void oneToTwo()
     {
         int counter = 0;
         Node rowHead = first;
@@ -170,7 +170,7 @@ public class FourWayLinkedList
 
         if (length > columnNumber)
         {
-            twoDToOneD();
+            twoToOne();
         }
 
         Node newNode = new Node(c);
@@ -214,7 +214,7 @@ public class FourWayLinkedList
 
         if (length > columnNumber)
         {
-            oneDtoTwoD();
+            oneToTwo();
 
         }
     }
