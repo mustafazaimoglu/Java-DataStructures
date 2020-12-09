@@ -26,12 +26,12 @@ public class QuickSort
        
        while(i < j)
        {
-           while(arr[i] <= pivot) // find the first lower element than pivot
+           while(arr[i] <= pivot) // find the first higher element than pivot
            {
                i++;
            }
            
-           while(arr[j] > pivot) // find the first higher element than pivot
+           while(arr[j] > pivot) // find the first lower element than pivot
            {
                j--;
            }
