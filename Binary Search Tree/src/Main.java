@@ -15,6 +15,9 @@ public class Main
         bst.insert(38);
         bst.display();
         
+        bst.delete(10);
+        bst.display();
+        
         bst.preorderTraversal();
         System.out.println();
         bst.inorderTraversal();

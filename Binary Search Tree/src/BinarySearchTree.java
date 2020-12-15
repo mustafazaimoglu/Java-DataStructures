@@ -44,6 +44,15 @@ public class BinarySearchTree
         {
             return null;
         }
+        
+        if (x < current.key)
+        {
+            current.left = deleteRecursive(current.left, x);
+        }
+        else if(x > current.key)
+        {
+            current.right = deleteRecursive(current.right, x);
+        }
 
         if (x == current.key)
         {
@@ -66,14 +75,7 @@ public class BinarySearchTree
             }
         }
 
-        if (x < current.key)
-        {
-            current.left = deleteRecursive(current.left, x);
-        }
-        else
-        {
-            current.right = deleteRecursive(current.right, x);
-        }
+        
 
         return current;
     }
