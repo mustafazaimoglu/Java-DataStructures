@@ -1,4 +1,4 @@
- 
+
 public class BinarySearchTree
 {
 
@@ -36,7 +36,7 @@ public class BinarySearchTree
 
     public void delete(int x)
     {
-       this.root = deleteRecursive(root, x);
+        this.root = deleteRecursive(root, x);
     }
 
     private Node deleteRecursive(Node current, int x)
@@ -45,12 +45,12 @@ public class BinarySearchTree
         {
             return null;
         }
-        
+
         if (x < current.key)
         {
             current.left = deleteRecursive(current.left, x);
         }
-        else if(x > current.key)
+        else if (x > current.key)
         {
             current.right = deleteRecursive(current.right, x);
         }
