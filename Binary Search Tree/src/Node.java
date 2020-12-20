@@ -1,6 +1,7 @@
 
 public class Node
 {
+
     int key;
     Node left;
     Node right;
@@ -15,10 +16,7 @@ public class Node
     @Override
     public String toString()
     {
-        return "[" + key + "," + (left == null ? "-" : "left : " + left) + "," +  (right == null ? "-" : "right : " + right) + "]";
+        return "[" + key + "," + (left == null ? "-" : "left : " + left) + "," + (right == null ? "-" : "right : " + right) + "]";
     }
-    
-   
-    
-    
+
 }
