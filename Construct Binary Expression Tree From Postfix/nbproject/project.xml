@@ -3,7 +3,7 @@
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
-            <name>Construct Binary Tree From Postfix</name>
+            <name>Construct Binary Expression Tree From Postfix</name>
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>
