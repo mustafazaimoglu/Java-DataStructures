@@ -9,11 +9,11 @@ public class Main
         Heap h = new Heap(10);
         
         h.print();
-        h.insert(16);
+        h.insert(400);
         h.print();
-        h.insert(17);
+        h.insert(900);
         h.print();
-        h.insert(19);
+        h.insert(400);
         h.print();
         h.insert(10);
         h.print();
