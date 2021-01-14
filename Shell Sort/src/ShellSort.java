@@ -15,13 +15,6 @@ public class ShellSort
         {
             for (int i = gap; i < arr.length; i++)
             {
-//            for(int j = i - gap; j >= 0; j -= gap)
-//              {
-//                  if(arr[j + gap] < arr[j])
-//                  {
-//                      swap(j, j + gap);
-//                  }
-//              }
                 for (int j = i; j >= gap; j -= gap)
                 {
                     if (arr[j] < arr[j - gap])
