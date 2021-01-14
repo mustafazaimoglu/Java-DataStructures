@@ -1,4 +1,5 @@
 // MKZ
+
 public class RadixSort
 {
 
@@ -22,7 +23,7 @@ public class RadixSort
 
     public void countingSort(int digitPos)
     {
-        int max = 10,i;
+        int max = 10, i;
         int tempArr[] = new int[arr.length];
         int count[] = new int[max];
 
