@@ -39,7 +39,7 @@ public class RadixSort
 
         for (i = arr.length - 1; i >= 0; i--)
         {
-            tempArr[--count[(arr[i] / digitPos) % 10]] = arr[i]; // same with line 31
+            tempArr[--count[(arr[i] / digitPos) % 10]] = arr[i]; // same with line 32
         }
 
         for (i = 0; i < arr.length; i++)
