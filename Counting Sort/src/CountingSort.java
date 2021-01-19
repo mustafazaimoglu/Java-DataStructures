@@ -26,19 +26,11 @@ public class CountingSort
         {
             count[i] += count[i - 1]; // to add 1 exist elements in the array
         }
-        
-        /*
-        for(i = 0; i < arr.length; i++)  // has some issues
-        {
-            tempArr[--count[arr[i]]] = arr[i];
-        }
-        */
-        
+
         for(i = arr.length - 1; i >= 0; i--)
         {
             tempArr[--count[arr[i]]] = arr[i]; // we are decreasing because we increased the elements before.
         }
-        
         
         for(i = 0; i < arr.length; i++)
         {
